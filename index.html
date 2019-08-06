@@ -42,6 +42,9 @@
 					},
 					daniel() {
 						this.type = 'D';
+					},
+					ryan() {
+						this.type = 'F';
 					}
 				}
       })
@@ -167,12 +170,13 @@
 										<li><a @click="sleepy" class="button">Sleepy</a></li>
 										<li><a @click="jared" class="button">Jared</a></li>
 										<li><a @click="daniel" class="button">Daniel</a></li>
+										<li><a @click="ryan" class="button">Ryan</a></li>
 									</ul>
 									<div v-if="type === 'A'">
 										<h2>Paul R. Vowell</h2>
 										<h3>Co-Founder, Chief Executive Officer</h3>
 										<p>
-											Paul Vowell is both an artist and technologist. With decades of music business and production experience, Paul foud it imperative to bring content into the 21st ccentury. He is CEO and co-founder of 9003 Industries, Inc.
+											Paul Vowell is both an artist and technologist. With decades of music business and production experience, Paul found it imperative to bring content into the 21st century. He is CEO and co-founder of 9003 Industries, Inc.
 										</p>
 									</div>
 									<div v-else-if="type === 'B'">
@@ -201,6 +205,13 @@
 										<h3>Chief Operations Officer</h3>
 										<p>
 											A tech hobbyist from childhood, Daniel started building electric vehicles in high school. Seven years of professional robotics manufacturing, programming, and 15 years film-making experience reinforce his current focus on computer vision, and neural network based image manipulation. Daniel is also co-founder of Waltz Skateboarding.
+										</p>
+									</div>
+									<div v-else-if="type === 'F'">
+									  <h2>Ryan McTaggart</h2>
+										<h3>Tech Evangalist and Investory Relations</h3>
+										<p>
+											Bio coming soon....
 										</p>
 									</div>
 								</div>
@@ -232,10 +243,10 @@
 								</form>
 
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
@@ -248,32 +259,30 @@
 									<h3>BBC - The Future of Gaming</h3>
 									<p>This year at E3 "The Odyssey" was featured on "The Future of Gaming", a broadcast by BBC. "The Odyssey" is a fully immersive, multi-player go-kart experience that brings takes players to another world to collect boosts and avoid traps while driving at up to 45mph!</p>
 									<ul class="actions">
-										<li><a href="https://www.bbc.com/news/av/technology-48845754/monsters-and-power-ups-in-new-go-kart-experience" class="button primary">View BBC</a></li>
-										<li><a href="https://www.youtube.com/watch?v=KOMYfvGFVuw" class="button">Watch Video</a></li>
+										<li><a href="https://www.bbc.com/news/av/technology-48845754/monsters-and-power-ups-in-new-go-kart-experience" target="_blank" class="button primary">View BBC</a></li>
+										<li><a href="https://www.youtube.com/watch?v=KOMYfvGFVuw" target="_blank" class="button">Watch Video</a></li>
 									</ul>
 									<hr />
 
 									<h3>The Naked Scientist</h3>
-									<p>9003 was featured on a premiere tech podcast. Stay tuned to 'Jump into the Light' to hear what our team has to say about the future of content and delivery systems.</p>
+									<p>9003 Industries, Inc. was brought on to discuss the future of content display systems and the role they will play in integrating education. A talk on learning systems in the new frontier!</p>
 									<ul class="actions">
-										<li><a href="" class="button primary">Listen</a></li>
-										<li><a href="" class="button">Default</a></li>
+										<li><a href="https://thenakedscientist.com" class="button primary" target="_blank">Podcast</a></li>
 									</ul>
 									<hr />
 
 									<h3>95.7 Cruz FM #TheLockerRoom</h3>
 									<p>With over a decade of software development experience and 20 years in film and production, our team has been pushing the boundaries of production for a long time.</p>
 									<ul class="actions">
-										<li><a href="https://post.futurimedia.com/ckea/playlist/listen-2416.html?fbclid=IwAR35RCBOiTooiy_mtkxh2wOrME4sAPWT88v-m4wZBn4ug6Wij1ZWTO6wNRI" class="button primary">View CRS</a></li>
-										<li><a href="" class="button">Listen Now!</a></li>
+										<li><a href="https://post.futurimedia.com/ckea/playlist/listen-2416.html?fbclid=IwAR35RCBOiTooiy_mtkxh2wOrME4sAPWT88v-m4wZBn4ug6Wij1ZWTO6wNRI" class="button primary" target="_blank">View CRS</a></li>
+										<li><a href="" class="button" target="_blank">Listen Now!</a></li>
 									</ul>
 									<hr />
 
 									<h3>Jump into the Light</h3>
 									<p>9003 was featured on a premiere tech podcast. Stay tuned to 'Jump into the Light' to hear what our team has to say about the future of content and delivery systems.</p>
 									<ul class="actions">
-										<li><a href="" class="button primary">Learn More</a></li>
-										<li><a href="" class="button">Default</a></li>
+										<li><a href="" class="button primary" target="_blank">Coming Soon..</a></li>
 									</ul>
 									<hr />
 
