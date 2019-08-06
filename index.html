@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>9003 Industries</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            .myContainer {
+                width: 400px;
+                height: 400px;
+            }
+    </style>
+		<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  	<script>
+    	// when life is settled, load up the fun stuff
+    	document.addEventListener('DOMContentLoaded', function () {
+    	  new Vue({
+    	    el: '#sg1',
+      	  // define data - initial 	display text
+      	  data: {
+						type : 'test'
+        },
+				methods: {
+					paul() {
+						this.type = 'A';
+					},
+					adnan() {
+						this.type = 'B';
+					},
+					jared() {
+						this.type = 'C';
+					},
+					sleepy() {
+						this.type = 'E';
+					},
+					daniel() {
+						this.type = 'D';
+					}
+				}
+      })
+    })
+  </script>
+		<script src="https://cdn.babylonjs.com/babylon.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span><b>9003</b></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>9003 Industries Inc.</h1>
+								<p>The Future of Content</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Spatial Computing</a></li>
+								<li><a href="#work">4D Capture</a></li>
+								<li><a href="#about">The Team</a></li>
+								<li><a href="#media">Media</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!-- li><a href="#elements">Elements</a></li -->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Spatial Computing</h2>
+								<span class="image main"><img src="images/headsets.jpg" alt="" /></span>
+								<p>Spatial computing allows the opportunity to build digital assets into the real world and display them with new and existing technology. With this model, we have revolutionized the music industry, created amazing multiplayer experiences, and currently work alongside businesses to bring their content to life.
+								</p>
+								<p>9003 Industries, Inc. is pioneering spatial computing on both the B2B and B2C level, offering deployment cross-platform including: iOS/Android, Magic Leap, NReal and more.</p>
+								<h3 class="major">Multiplayer</h3>
+								<span class="image main"><img src="images/multi.png" alt="" /></span>
+								<p>With modern mobile platforms, we can build experiences that can be supported across multiple devices. Users can share experiences with friends and family or over the internet. The power of this artistic license allows a new world of opportunity for the artist to captivate an audience in new and profound ways. We have only begun to be explore this new world.
+								<p>The replayability of our content is unique to the user. Spatial computing allows the user to view a scene from any angle at any time. Fast forward, rewind, and pause all at your fingertips.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">4D Capture</h2>
+								<span class="image main"><img src="images/4d.jpg" alt="" /></span>
+								<p>Volumetric Video represents the next evolution in photography/cinematography. By capturing an entire scene perspective rather than the centuries old single vantage point, the assets can be reconstructed and viewed from any point in space.</p>
+
+								<hr />
+								<h3>A new type of asset</h3>
+								<p>No longer restricted to the pages of science fiction, the concept of holograms will change the way we consume and distribute media. Viewable anywhere as opposed to the confinement of traditional 2D content. From entertainment to telepresence, we allow mobile and headset users to view and project Volumetric Video across all digital platforms.<p>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">The Team</h2>
+								<span class="image main"><img src="images/team.jpg" alt="" /></span>
+								<p>With over a decade of software development experience and 20 years in film and television production our team has a key focus on storydriven content.</p>
+								<ul class="actions">
+									<!-- <li><a href="#" class="button primary">Learn More</a></li> -->
+									<!-- <li><a href="#" class="button">Default</a></li> -->
+								</ul>
+								<br />
+								<hr />
+								<!-- div class="myContainer">
+									<babylon>
+										<model url="https://playground.babylonjs.com/scenes/BoomBox.glb">
+									</babylon>
+     						</div>
+								<babylon>
+									<script>
+									var createScene = function () {
+
+    							// This creates a basic Babylon Scene object (non-mesh)
+    							var scene = new BABYLON.Scene(engine);
+
+    							// This creates and positions a free camera (non-mesh)
+							    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
+
+							    // This targets the camera to scene origin
+							    camera.setTarget(BABYLON.Vector3.Zero());
+
+							    // This attaches the camera to the canvas
+							    camera.attachControl(canvas, true);
+
+							    // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
+							    var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+
+							    // Default intensity is 1. Let's dim the light a small amount
+							    light.intensity = 0.1;
+
+							    // Our built-in 'sphere' shape.
+							    var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 2, segments: 32}, scene);
+
+							    // Move the sphere upward 1/2 its height
+							    sphere.position.y = 1;
+
+							    // Our built-in 'ground' shape.
+							    var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
+
+							    return scene;
+
+							};
+
+									</script>
+								</babylon>
+								<script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script -->
+								<div id="sg1">
+									<div>
+									  <h3>Select a member of our team to learn more!</h3>
+									</div>
+									<ul class="actions">
+										<li><a class="button" @click="paul">Paul</a></li>
+										<li><a class="button" @click="adnan">Adnan</a></li>
+										<li><a @click="sleepy" class="button">Sleepy</a></li>
+										<li><a @click="jared" class="button">Jared</a></li>
+										<li><a @click="daniel" class="button">Daniel</a></li>
+									</ul>
+									<div v-if="type === 'A'">
+										<h2>Paul R. Vowell</h2>
+										<h3>Co-Founder, Chief Executive Officer</h3>
+										<p>
+											Paul Vowell is both an artist and technologist. With decades of music business and production experience, Paul foud it imperative to bring content into the 21st ccentury. He is CEO and co-founder of 9003 Industries, Inc.
+										</p>
+									</div>
+									<div v-else-if="type === 'B'">
+										<h2>Adnan E. Chahbandar</h2>
+										<h3>Co-Founder, Chief Technology Officer</h3>
+										<p>
+											Adnan is a technologist and data scientist. With experience bringing tech education to 4 continents, Adnan has always been a traveler and passionate techevangalist.
+										</p>
+									</div>
+									<div v-else-if="type === 'E'">
+										<h2>"Sleepy" Patrick Brown</h2>
+										<h3>Senior Director and Artist Relations</h3>
+										<p>
+											Regardless of whether you know his name, you have heard his music. "Sleepy" Brown has produced music for TLC, OutKast, TI, Celo, and many more. The father of the Dirty South sound, Sleepy Brown pioneered an entire movement in music as the founder of the Dungeon Family. Sleepy Brown manages all of our artist relations and is 9003 Industries spokesperson
+										</p>
+									</div>
+									<div v-else-if="type === 'C'">
+										<h2>Jared Puetz</h2>
+										<h3>Out-reach and Communications</h3>
+										<p>
+											With eleven years in the film and tv industry, Jared Puetz, puts his network in business to the new age of tech. With high end clients and multi industry entrepreneurship Jared brings neutral solutions with positive results every time. Focusing on story driven content and entertainment, marketing and development Jared is 9003's chief of communication, always available and at your convenience.
+										</p>
+									</div>
+									<div v-else-if="type === 'D'">
+									  <h2>Daniel Joaquin Trujillo</h2>
+										<h3>Chief Operations Officer</h3>
+										<p>
+											A tech hobbyist from childhood, Daniel started building electric vehicles in high school. Seven years of professional robotics manufacturing, programming, and 15 years film-making experience reinforce his current focus on computer vision, and neural network based image manipulation. Daniel is also co-founder of Waltz Skateboarding.
+										</p>
+									</div>
+								</div>
+
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="https://formspree.io/paul@9003.dev">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+							<!-- About -->
+								<article id="media">
+									<h2 class="major">media</h2>
+									<span class="image main"><img src="images/ext.jpg" alt="" /></span>
+									<hr />
+
+									<h3>BBC - The Future of Gaming</h3>
+									<p>This year at E3 "The Odyssey" was featured on "The Future of Gaming", a broadcast by BBC. "The Odyssey" is a fully immersive, multi-player go-kart experience that brings takes players to another world to collect boosts and avoid traps while driving at up to 45mph!</p>
+									<ul class="actions">
+										<li><a href="https://www.bbc.com/news/av/technology-48845754/monsters-and-power-ups-in-new-go-kart-experience" class="button primary">View BBC</a></li>
+										<li><a href="https://www.youtube.com/watch?v=KOMYfvGFVuw" class="button">Watch Video</a></li>
+									</ul>
+									<hr />
+
+									<h3>The Naked Scientist</h3>
+									<p>9003 was featured on a premiere tech podcast. Stay tuned to 'Jump into the Light' to hear what our team has to say about the future of content and delivery systems.</p>
+									<ul class="actions">
+										<li><a href="" class="button primary">Listen</a></li>
+										<li><a href="" class="button">Default</a></li>
+									</ul>
+									<hr />
+
+									<h3>95.7 Cruz FM #TheLockerRoom</h3>
+									<p>With over a decade of software development experience and 20 years in film and production, our team has been pushing the boundaries of production for a long time.</p>
+									<ul class="actions">
+										<li><a href="https://post.futurimedia.com/ckea/playlist/listen-2416.html?fbclid=IwAR35RCBOiTooiy_mtkxh2wOrME4sAPWT88v-m4wZBn4ug6Wij1ZWTO6wNRI" class="button primary">View CRS</a></li>
+										<li><a href="" class="button">Listen Now!</a></li>
+									</ul>
+									<hr />
+
+									<h3>Jump into the Light</h3>
+									<p>9003 was featured on a premiere tech podcast. Stay tuned to 'Jump into the Light' to hear what our team has to say about the future of content and delivery systems.</p>
+									<ul class="actions">
+										<li><a href="" class="button primary">Learn More</a></li>
+										<li><a href="" class="button">Default</a></li>
+									</ul>
+									<hr />
+
+								</article>
+
+						<!-- Elements >
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article-->
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 9003 Industries Inc</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
