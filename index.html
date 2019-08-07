@@ -166,79 +166,81 @@
 									</div>
 									<p>With over a decade of software development experience and 20 years in film and television production our team has a key focus on storydriven content.</p>
 									<ul class="actions">
-										<li><a class="button" @click="paul">Paul</a></li>
-										<li><a class="button" @click="adnan">Adnan</a></li>
-										<li><a @click="sleepy" class="button">Sleepy</a></li>
-										<li><a @click="jared" class="button">Jared</a></li>
-										<li><a @click="daniel" class="button">Daniel</a></li>
+										<li><a class="button" href="#info" @click="paul">Paul</a></li>
+										<li><a class="button" href="#info" @click="adnan">Adnan</a></li>
+										<li><a @click="sleepy" href="#info" class="button">Sleepy</a></li>
+										<li><a @click="jared" href="#info" class="button">Jared</a></li>
+										<li><a @click="daniel" href="#info" class="button">Daniel</a></li>
 										<!-- <li><a @click="ryan" class="button">Ryan</a></li> -->
 									</ul>
-									<div v-if="type === 'A'">
-										<h2>Paul R. Vowell</h2>
-										<h3>Co-Founder, Chief Executive Officer</h3>
-										<p>
-											Paul Vowell is both an artist and technologist. With decades of music business and production experience, Paul found it imperative to bring content into the 21st century. He is CEO and co-founder of 9003 Industries, Inc.
-										</p>
-										<ul class="icons">
-											<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
-											<li><a href="mailto:paul@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
-											<!-- <li><a href="https://www.instagram.com/zephyriah" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li> -->
-											<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
-										</ul>
-										<!-- <li><a href="https://www.instagram.com/ministerzero" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li> -->
-									</div>
-									<div v-else-if="type === 'B'">
-										<h2>Adnan E. Chahbandar</h2>
-										<h3>Co-Founder, Chief Technology Officer</h3>
-										<p>
-											Adnan is a technologist and data scientist. With experience bringing tech education to 4 continents, Adnan has always been a traveler and passionate techevangalist.
-										</p>
-										<ul class="icons">
-											<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
-											<li><a href="mailto:adnan@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
-											<li><a href="https://www.instagram.com/spacemaker" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-											<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
-										</ul>
-									</div>
-									<div v-else-if="type === 'E'">
-										<h2>"Sleepy" Patrick Brown</h2>
-										<h3>Senior Director and Artist Relations</h3>
-										<p>
-											Regardless of whether you know his name, you have heard his music. "Sleepy" Brown has produced music for TLC, OutKast, TI, Celo, and many more. The father of the Dirty South sound, Sleepy Brown pioneered an entire movement in music as the founder of the Dungeon Family. Sleepy Brown manages all of our artist relations and is 9003 Industries <b>Spokesperson</b>
-										</p>
-									</div>
-									<div v-else-if="type === 'C'">
-										<h2>Jared Puetz</h2>
-										<h3>Out-reach and Communications</h3>
-										<p>
-											With eleven years in the film and tv industry, Jared Puetz, puts his network in business to the new age of tech. With high end clients and multi industry entrepreneurship Jared brings neutral solutions with positive results every time. Focusing on story driven content and entertainment, marketing and development. Jared is 9003's <b>Chief of Communication</b>, always available and at your convenience.
-										</p>
-										<ul class="icons">
-											<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
-											<li><a href="mailto:jared@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
-											<li><a href="https://www.instagram.com/zephyriah" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-											<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
-										</ul>
-									</div>
-									<div v-else-if="type === 'D'">
-									  <h2>Daniel Joaquin Trujillo</h2>
-										<h3>Chief Operations Officer</h3>
-										<p>
-											A tech hobbyist from childhood, Daniel started building electric vehicles in high school. Seven years of professional robotics manufacturing, programming, and 15 years film-making experience reinforce his current focus on computer vision, and neural network based image manipulation. Daniel is also co-founder of Waltz Skateboarding.
-										</p>
-										<ul class="icons">
-											<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
-											<li><a href="mailto:daniel@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
-											<li><a href="https://www.instagram.com/danieljtrujillo" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-											<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
-										</ul>
-									</div>
-									<div v-else-if="type === 'F'">
-									  <h2>Ryan McTaggart</h2>
-										<h3>Tech Evangalist and Investory Relations</h3>
-										<p>
-											Bio coming soon....
-										</p>
+									<div id=info>
+										<div v-if="type === 'A'">
+											<h2>Paul R. Vowell</h2>
+											<h3>Co-Founder, Chief Executive Officer</h3>
+											<p>
+												Paul Vowell is both an artist and technologist. With decades of music business and production experience, Paul found it imperative to bring content into the 21st century. He is CEO and co-founder of 9003 Industries, Inc.
+											</p>
+											<ul class="icons">
+												<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
+												<li><a href="mailto:paul@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
+												<!-- <li><a href="https://www.instagram.com/zephyriah" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li> -->
+												<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
+											</ul>
+											<!-- <li><a href="https://www.instagram.com/ministerzero" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li> -->
+										</div>
+										<div v-else-if="type === 'B'">
+											<h2>Adnan E. Chahbandar</h2>
+											<h3>Co-Founder, Chief Technology Officer</h3>
+											<p>
+												Adnan is a technologist and data scientist. With experience bringing tech education to 4 continents, Adnan has always been a traveler and passionate techevangalist.
+											</p>
+											<ul class="icons">
+												<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
+												<li><a href="mailto:adnan@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
+												<li><a href="https://www.instagram.com/spacemaker" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
+											</ul>
+										</div>
+										<div v-else-if="type === 'E'">
+											<h2>"Sleepy" Patrick Brown</h2>
+											<h3>Senior Director and Artist Relations</h3>
+											<p>
+												Regardless of whether you know his name, you have heard his music. "Sleepy" Brown has produced music for TLC, OutKast, TI, Celo, and many more. The father of the Dirty South sound, Sleepy Brown pioneered an entire movement in music as the founder of the Dungeon Family. Sleepy Brown manages all of our artist relations and is 9003 Industries <b>Spokesperson</b>
+											</p>
+										</div>
+										<div v-else-if="type === 'C'">
+											<h2>Jared Puetz</h2>
+											<h3>Out-reach and Communications</h3>
+											<p>
+												With eleven years in the film and tv industry, Jared Puetz, puts his network in business to the new age of tech. With high end clients and multi industry entrepreneurship Jared brings neutral solutions with positive results every time. Focusing on story driven content and entertainment, marketing and development. Jared is 9003's <b>Chief of Communication</b>, always available and at your convenience.
+											</p>
+											<ul class="icons">
+												<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
+												<li><a href="mailto:jared@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
+												<li><a href="https://www.instagram.com/zephyriah" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
+											</ul>
+										</div>
+										<div v-else-if="type === 'D'">
+										  <h2>Daniel Joaquin Trujillo</h2>
+											<h3>Chief Operations Officer</h3>
+											<p>
+												A tech hobbyist from childhood, Daniel started building electric vehicles in high school. Seven years of professional robotics manufacturing, programming, and 15 years film-making experience reinforce his current focus on computer vision, and neural network based image manipulation. Daniel is also co-founder of Waltz Skateboarding.
+											</p>
+											<ul class="icons">
+												<!-- <li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li> -->
+												<li><a href="mailto:daniel@9003.dev" class="icon fa-envelope" target="_blank"><span class="label">Envelope</span></a></li>
+												<li><a href="https://www.instagram.com/danieljtrujillo" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<!-- <li><a href="#" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li> -->
+											</ul>
+										</div>
+										<div v-else-if="type === 'F'">
+										  <h2>Ryan McTaggart</h2>
+											<h3>Tech Evangalist and Investory Relations</h3>
+											<p>
+												Bio coming soon....
+											</p>
+										</div>
 									</div>
 								</div>
 
